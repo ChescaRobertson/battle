@@ -1,7 +1,8 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
 
 get '/' do
-  'Hello world!'
+  'Hi'
 end
 
 get '/secret' do
