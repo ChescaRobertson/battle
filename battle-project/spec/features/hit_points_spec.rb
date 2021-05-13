@@ -6,6 +6,7 @@ feature 'hit_points' do
 
   scenario 'reduce player 2 HP by 1' do
     sign_in_play
+    save_and_open_page
     click_link 'Attack'
     # Why two expect clauses?
     expect(page).not_to have_content 'Francesca 5 HP'
